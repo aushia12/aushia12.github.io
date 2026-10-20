@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1">
+
+<link
+  href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@600&display=swap"
+  rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  background: #0A0A08;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.graphic-button {
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #D85A36;
+  background: transparent;
+  border: 1px solid white;
+  padding: 12px 28px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  transition: color 0.2s, box-shadow 0.2s;
+}
+
+.graphic-button:hover {
+  font-family: "Basic Grotesque Arabic", Arial, sans-serif;
+  color: #FF6E45;
+  box-shadow: 0 0 16px rgba(255,110,69,0.4);
+  animation: pulse 1.2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.06); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .graphic-button:hover {
+    animation: none;
+  }
+}
+</style>
+</head>
+
+<body>
+  <a class="graphic-button" href="#">
+    GRAPHIC DESIGN
+  </a>
+</body>
+</html>
